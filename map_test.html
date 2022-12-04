@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ghiardo</title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+     crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+    crossorigin=""></script>
+</head>
+<body>
+
+<div id="mapid" style="width: 1200px; height: 800px;"></div>
+<script>
+	var map = L.map('mapid').setView([44.698365, 10.631016], 17);
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
+
+    var greenIcon = L.icon({
+    iconUrl: 'https://storage.cloud.google.com/progetto-v3.appspot.com/assets/green.png',
+    iconSize:     [25, 25], // size of the icon
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [10, 0] // point from which the popup should open relative to the iconAnchor
+    });
+    var redIcon = L.icon({
+    iconUrl: 'https://storage.cloud.google.com/progetto-v3.appspot.com/assets/red.png',
+    iconSize:     [25, 25], // size of the icon
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [10, 0] // point from which the popup should open relative to the iconAnchor
+    });
+    var blackIcon = L.icon({
+    iconUrl: 'https://storage.cloud.google.com/progetto-v3.appspot.com/assets/black.png',
+    iconSize:     [25, 25], // size of the icon
+    iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [10, 0] // point from which the popup should open relative to the iconAnchor
+    });
+    
+    L.marker([44.69928967481429, 10.629796513137617], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69802264216855, 10.633294882778197], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.70230503543456, 10.625129978214485], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.70064251877337, 10.634866146731746], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.70052094186798, 10.62780362749655], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69508177030302, 10.626392065028815], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69885486366883, 10.634423805280983], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.697611585812176, 10.627843933266536], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.69629383654972, 10.633996536315228], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69587626967353, 10.63153133382141], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69518042317518, 10.630170460623452], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69495977439987, 10.628476650001568], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.70134127569725, 10.62525186306488], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.695515911402495, 10.62747865789042], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.6987416293155, 10.634034436737137], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69484513057423, 10.62942721377978], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.70153973430995, 10.631748044951978], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.69973296379404, 10.63036199398727], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69788890042104, 10.631513835013068], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.70288495446943, 10.630117196390277], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69742309974891, 10.628056723893604], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.700462371491575, 10.625322663916895], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69628220502962, 10.629629566829836], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.7005686983309, 10.6345412134056], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.69797128613029, 10.62846115003092], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69710262766808, 10.625946888861138], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69425344853475, 10.629158073826556], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.69523997123486, 10.629542416164988], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69962847212601, 10.629485603022063], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69769106272636, 10.630274076948696], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69402710880986, 10.63317105047865], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.693809790428816, 10.631169544545354], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.70281715809346, 10.632425446474752], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69337279635156, 10.629918848777097], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.69850329825831, 10.629876824512571], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69784292761312, 10.631643595368455], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69650680007535, 10.634837466516164], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.70246280661341, 10.631911277947871], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69539466829824, 10.630220395819928], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69539549682318, 10.629661873838153], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.6933256734806, 10.63224039917992], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69506440560321, 10.630609329048918], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.6999841137004, 10.633270269181514], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.69804655465568, 10.625994471723308], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69985120985342, 10.632571779588396], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.70144275669067, 10.633604218842502], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.697549457021054, 10.629019881724355], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.70077329000895, 10.625398883892275], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69587782152669, 10.62875736410391], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.70290993460345, 10.630303034545696], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69833404845759, 10.626285063279337], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69764000873678, 10.624963606155395], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69764899153763, 10.629025259483564], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69737234695707, 10.626710297814332], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69447325553857, 10.631138042145134], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.70036903278862, 10.625463894626174], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.700882944766526, 10.62521575353031], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.70127218259324, 10.63351755379454], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.6952771203696, 10.632110593204356], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.70151035060376, 10.6299423030294], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.69955427317528, 10.625494379307316], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.6934963727732, 10.633974012009618], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69960119087493, 10.63028924377635], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69476469890292, 10.629493701985432], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.70265048881118, 10.631591582773211], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69960383914795, 10.634252346339196], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69702993740273, 10.62601797307763], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69775312412939, 10.628724625351728], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69337315753471, 10.631518780862256], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69469014863423, 10.63368562607624], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69656395328772, 10.629645394060503], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.70058168746301, 10.634458921011596], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69994108538536, 10.629392786995318], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69549643899879, 10.62856275060873], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69944559541919, 10.629005663260646], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.69471797022816, 10.632175896663172], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69769016098714, 10.629202777423131], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.699426703579775, 10.626931710601673], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.70165249922634, 10.630921387421164], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69456253310681, 10.631237076291296], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69596876812122, 10.634138436375869], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69832109153549, 10.629007799752312], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69690351177309, 10.628369795580308], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.694397418442094, 10.634293870892524], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.70035005511002, 10.630323469450918], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69369724572024, 10.632902718617196], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69667615028792, 10.632641971904937], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.70027996726263, 10.625772440154794], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.7017638426658, 10.625801952573786], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.69385259405041, 10.62703176285451], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69769997629253, 10.62682631175211], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.6995348781392, 10.625588083028092], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.698038207723634, 10.62891604351815], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.695429951646105, 10.625808114173488], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.69883594190309, 10.63254963141653], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.69725760769728, 10.62506488023855], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.70059635800836, 10.630636573427791], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.70175224211085, 10.626236537844576], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.69870765655919, 10.634500637705802], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.70040615628916, 10.62777153908328], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.69815149270592, 10.625464987878312], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69579363677919, 10.6311267445822], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.69526948013862, 10.63197337440552], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69632964352886, 10.63153302705411], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69724140003618, 10.634213898482766], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69464053427456, 10.631355870435987], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.69871784867452, 10.629809112214785], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.69950306636177, 10.625837265425254], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.69576691932912, 10.629221742567722], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.698449726905466, 10.629163131792255], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.694879815636966, 10.62679837372466], {icon: greenIcon}).bindPopup('test').addTo(map)
+L.marker([44.700594299517135, 10.62636556891308], {icon: blackIcon}).bindPopup('test').addTo(map)
+L.marker([44.69364181397218, 10.629454328366862], {icon: blackIcon}).bindPopup('test').addTo(map)
+
+let timeout
+timeout = setTimeout(alert("Hello"),500000)
+</script>
+
+</body>
+</html>

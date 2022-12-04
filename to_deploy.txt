@@ -1,0 +1,10 @@
+- create yaml file
+gcloud projects list
+gcloud config set project [PROJECT-ID]
+gcloud app deploy
+
+gcloud pubsub subscriptions create subscription1 --topic sensori --push-endpoint https://progetto-v3.ew.r.appspot.com/pubsub/push
+- quando arriva un messaggio di un determinato topic (test-topic) viene inviata al link citato
+
+- per refreshare la pagina
+<meta http-equiv="refresh" content="5" >
