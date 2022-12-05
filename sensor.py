@@ -50,7 +50,7 @@ data = ""
 # Potenza 1;Unità ;Temperatura 1;Unità;Temperatura 2;Unità;Volume 1;Unità
 
 # ogni 5 secondi vengono lette 115 righe del dataset (oridnato per data ed ora)
-while (c < 2000):
+while (c < 100000):
     data = ""
     for row in df_sensor.truncate(before=c, after=c+114).iterrows():
         data = data + str(row[1]["Numero di serie del contatore"])+"$" + \
@@ -70,5 +70,5 @@ while (c < 2000):
 
     r = publisher.publish(topic_path, data_encoded)
 
-    sleep(30)
+    sleep(10)
     print("LETTURA FATTA")

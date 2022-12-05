@@ -69,10 +69,10 @@ def render_map():
     stati = {}
     for doc in db.collection('last').stream():
         # print(f'{doc.id} --> {doc.to_dict()}')
-        if doc.to_dict()["portata"] > 0.01:
-            stati[doc.id] = "green"
-        elif doc.to_dict()["portata"] == 0:
+        if doc.to_dict()["portata"] == 0:
             stati[doc.id] = "black"
+        elif doc.to_dict()["temperatura1"] > doc.to_dict()["temperatura2"]:
+            stati[doc.id] = "green"
         else:
             stati[doc.id] = "red"
 
