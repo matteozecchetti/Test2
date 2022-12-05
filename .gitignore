@@ -1,6 +1,6 @@
 credentials.json
 **/*.pem
-secret.py
+/secret.py
 secret
 venv/
 ZZZ_STUFF/
